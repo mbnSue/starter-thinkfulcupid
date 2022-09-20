@@ -3,6 +3,10 @@
 body {
   font-family: "Lato", sans-serif;
   color: #6b1a22;
+  width: fit-content;
+}
+h1{
+  text-align: center
 }
 
 h2 {
@@ -51,13 +55,32 @@ main img {
   flex: 2;
 }
 
+.border{
+  border-style: solid;
+}
+.centerImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.enlarge{
+  border-right: 20px;
+  margin-bottom: 20px;
+}
+
+.block{
+  display: block;
+}
 /* -------  Navigation ------- */
 
 header {
   background-color: #83092e;
   padding: 20px 20px 0 20px;
   text-align: center;
+  width: 100%;
 }
+
 
 .logo {
   font-family: "Tangerine", cursive;
@@ -65,8 +88,11 @@ header {
   color: #ecdbc9;
 }
 
+
+
 header nav ul li {
   list-style-type: none;
+  display: inline;
 }
 
 header nav ul li a {
@@ -118,3 +144,17 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px){
+.flexR{
+  display: flex;
+  flex-direction: row;
+}
+.flexC{
+  display: flex;
+  flex-direction: column;
+}
+.spaceR{
+  margin-right: 20px;
+}
+
+}
