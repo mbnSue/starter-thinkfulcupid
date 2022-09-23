@@ -24,6 +24,8 @@ h3 {
 p {
   line-height: 1.5em;
   margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 section {
@@ -62,10 +64,10 @@ main img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 }
-.borderRmarginB{
-  border-right: 20px;
+
+.marginB{
   margin-bottom: 20px;
 }
 
@@ -75,13 +77,17 @@ main img {
 
 .shrink{
   width: 50%;
-  height: 50%;
+  height: auto;
+}
+
+.justE{
+  justify-content:space-evenly
 }
 /* -------  Navigation ------- */
 
 header {
   background-color: #83092e;
-  padding: 20px 20px 0 20px;
+  /* padding: 20px 20px 0 20px; */
   text-align: center;
   width: 100%;
 }
@@ -115,16 +121,32 @@ header nav ul li a:hover {
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
+  
 }
 
 form label {
   font-weight: bold;
+  /* width: auto; */
+  /* float: left; */
+  margin-bottom: 25px;
+  display: flex;
+  align-self: flex-start;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 160px;
+  /* float: right; */
+  display: flex;
+  align-self: flex-end;
+}
+
+form div{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 form button {
@@ -135,6 +157,8 @@ form button {
   padding: 15px;
   width: 100%;
 }
+
+
 
 /* -------  Footer ------- */
 
@@ -158,8 +182,51 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-.spaceR{
-  margin-right: 20px;
+
+
+
+
+/* header */
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+.imgResize{
+width: 50%;
+margin-left: 0px;
+margin-right: 0px;
+}
+.img1Resize{
+  width: 25%;
+  height: 25%;
+  margin-right: 20px;
+  }
+
+  .img2Resize{
+    width: 50%;
+  height: 50%;
+  }
+
+  .imgResize3{
+    width: 100%;
+    height: 564.02px;
+  }
+
+  section#join {
+    justify-content:space-evenly;
+}
+
+.marginB2{
+  margin-bottom: 20px;
+}
+.marginR{
+  margin-right: 20px;
+}
+.center{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+ 
 }
